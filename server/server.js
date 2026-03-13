@@ -22,7 +22,8 @@ async function verifyAWSCredentials() {
   }
 }
 
-app.listen(PORT, async () => {
-  console.log(`🚀 Server running on port ${PORT}`);
+app.listen(PORT, "0.0.0.0", async () => {
+  console.log(`Server running on http://0.0.0.0:${PORT}`);
   await verifyAWSCredentials();
+
 });
