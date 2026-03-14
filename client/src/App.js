@@ -15,7 +15,7 @@ function App() {
       const formData = new FormData();
       formData.append('image', file); // must match backend multer key 'image'
 
-      const res = await axios.post('http://localhost:5000/upload', formData, {
+      const res = await axios.post('http://54.89.157.170:5000/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
